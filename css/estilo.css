@@ -46,7 +46,7 @@ inínio do navTopo
     display: flex;
     align-items: center;
     padding-top: 1%;
-    padding-right: 5%;
+    padding-right: 10%;
 }
 
 .navTopo .contato{
@@ -81,14 +81,14 @@ inínio do navTopo
     align-items: center;
     justify-content: center;
     margin: 0 3px;
-    padding: 2px 8px;
+    padding: 2px 3px;
     background: #323232;
     border-radius: 50%;
 }
 
 .navTopo .col-md-1 ul li a i{
     color: white;
-    font-size: 75%;
+    font-size: 80%;
 }
 
 /* -----------------------------
@@ -102,8 +102,155 @@ Início do navMenu
 .navMenu {
     background: #353535;
     text-align: center;
+    padding: 15px;
 }
 
+.navMenu .col-md-2 img{
+    width: 110% !important;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-top: 10%;
+}
+
+.navMenu .col-md-8 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+    padding: 0;
+    margin: 0;
+}
+
+.navMenu .col-md-8 ul, ul li, ul li a {
+    font-size: 15px;
+    font-weight: 600;
+    color: white !important;
+    padding: 0 5px;
+}
+
+.navMenu .btn {
+    background: #ffcc00;
+    border-radius: 25px;
+    color: #353535;
+    font-size: 14px;
+    font-weight: 700;
+    padding: 7px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 5%;
+}
+
+.navMenu .btn:hover {
+    background: black;
+    color: white;
+}
+
+.navMenu ul li {
+    border-bottom: 3px solid #353535;
+}
+.navMenu ul li:hover{
+    color: #ffcc00 !important;
+    border-bottom: 3px solid #ffcc00;
+    background: #353535 !important;
+}
+
+.navMenu ul li a:hover{
+    color: #ffcc00 !important;
+}
+  
+.dropdown {
+    background: #353535;
+}
+
+/* Início - Dropdown em níveis */
+.navMenu .menu, .sub-menu {
+    margin: 0;
+    padding: 0;
+}
+
+.navMenu .clearfix:after {
+    content: '.';
+    display: block;
+    clear: both;
+    height: 0;
+    line-height: 0;
+    font-size: 0;
+    visibility: hidden;
+    overflow: hidden;
+}
+
+.navMenu .menu, .sub-menu {
+    list-style: none;
+}
+
+.navMenu .sub-menu {
+    background: #353535;
+    padding: 0 !important;
+    margin: 5px 0 0 0 !important;
+}
+
+.navMenu .sub-menu li{
+    padding: 15px 0 !important;
+}
+
+.navMenu .menu a {
+    text-decoration: none;
+    display: block;
+}
+
+.navMenu .sub-menu a {
+    font-weight: 300;
+    font-size: 13px;
+}
+
+.navMenu .menu li {
+    position: relative;
+}
+
+.navMenu .menu > li {
+    float: left;
+}
+
+.navMenu .menu > li:hover {
+    background: #3A3F45;
+}
+
+.navMenu .menu li:hover > .sub-menu {
+    display: block;
+}
+
+.navMenu .sub-menu {
+    display: none;
+    position: absolute;
+    min-width: 150px;
+}
+
+.navMenu .sub-menu li {
+    border-bottom: none !important;
+}
+
+.navMenu .sub-menu li:hover {
+    background: #3A3F45 !important;
+    border-bottom: none !important;
+}
+
+.navMenu .sub-menu li a:hover {
+    color: white !important;
+}
+
+.navMenu .sub-menu .sub-menu {
+    top: -5px;
+    left: 100%;
+    width: 200px;
+}
+
+.navMenu .sub-menu i {
+    font-size: 40%;
+    padding-left: 5px;
+}
+/* Fim - Dropdown em níveis */
 /* ---------------------------------
 Fim do navMenu
 ------------------------------------- */
