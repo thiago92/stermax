@@ -130,7 +130,7 @@ Início do navMenu
 }
 
 .navMenu .btn {
-    background: #ffcc00;
+    background: #FFC12A;
     border-radius: 25px;
     color: #353535;
     font-size: 14px;
@@ -151,13 +151,13 @@ Início do navMenu
     border-bottom: 3px solid #353535;
 }
 .navMenu ul li:hover{
-    color: #ffcc00 !important;
-    border-bottom: 3px solid #ffcc00;
+    color: #FFC12A !important;
+    border-bottom: 3px solid #FFC12A;
     background: #353535 !important;
 }
 
 .navMenu ul li a:hover{
-    color: #ffcc00 !important;
+    color: #FFC12A !important;
 }
   
 .dropdown {
@@ -250,6 +250,15 @@ Início do navMenu
     font-size: 40%;
     padding-left: 5px;
 }
+
+.navMenu .zoomImg {
+    transition: transform 0.3s ease;
+    width: 100%;
+  }
+  
+.navMenu .zoomImg:hover {
+    transform: scale(1.1);
+  }
 /* Fim - Dropdown em níveis */
 /* ---------------------------------
 Fim do navMenu
@@ -258,3 +267,116 @@ Fim do navMenu
 /* --------------------------
 Fim do header
 -------------------------------- */
+
+/* -------------------------------
+Início do carrosel
+------------------------------- */
+
+.carousel {
+    margin: 0;
+}
+
+.carousel i {
+    font-size: 200%;
+    color: #ffffff;
+}
+
+.carousel .textoCarrosel {
+    text-align: left;
+    top: 10%;
+    transform: translateY(-50%);
+    font-size: 50px;
+    font-weight: 700;
+    line-height: 1;
+}
+
+.carousel .textoCarrosel p {
+    margin-bottom: 0px;
+    margin-top: 0px;
+    line-height: 65px;
+}
+
+.carousel .textoCarrosel .corTextoSlide {
+    color: #FFC12A;
+}
+
+.carousel .btn {
+    text-align: center;
+    color: white;
+    border: 2px solid white;
+    border-radius: 40px;
+    margin-top: 0px;
+    text-align: center;
+    font-size: 20px !important;
+    padding-top: 2%;
+    margin-left: 5%;
+}
+
+.carousel .btn:hover {
+    list-style: none;
+}
+
+.carousel .carousel-item img {
+    transition: transform 30s ease;
+  }
+  
+.carousel .carousel-item.active img {
+    transform: scale(2.0);
+  }
+
+  @keyframes animacaoFadeInUpBig {
+    0% {
+      opacity: 0;
+      transform: translate3d(0, 2000px, 0);
+    }
+    100% {
+      opacity: 1;
+      transform: none;
+    }
+  }
+  
+  .fadeInUpBig {
+    animation-name: animacaoFadeInUpBig;
+    animation-duration: 2s;
+    animation-delay: 0s;
+    animation-fill-mode: both;
+  }
+  
+  
+  
+  
+  
+  
+  
+
+/* -----------------------------
+Fim do Carrosel
+------------------------------------ */
+
+/* -------------------------
+Início do secaoDesde
+------------------------- */
+
+.secaoDesde {
+    background: #FFC12A;
+    text-align: center;
+    margin: 0;
+    padding: 45px 0 45px 0;
+}
+
+.secaoDesde h2 {
+    color: white;
+    font-size: 32px;
+    font-weight: 600;
+    padding-bottom: 15px;
+}
+
+.secaoDesde h3 {
+    color: black;
+    font-size: 16px;
+    font-weight: 600;
+}
+
+/* --------------------
+Fim do secaoDesde
+--------------------------------- */
