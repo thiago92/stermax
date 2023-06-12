@@ -1,0 +1,113 @@
+/*Body da página*/
+body {
+    font-family: 'Montserrat', sans-serif;
+    background: #FFFFFF;
+    overflow-x:hidden;
+}
+
+/*--------------------------------------- 
+Inicio do header 
+---------------------------------------------------*/
+
+/* ----------------------------
+inínio do navTopo
+--------------------------------- */
+
+.navTopo {
+    background: #424242;
+    padding: 10px;
+}
+
+.navTopo .col-md-5{
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    height: 100%;
+    padding: 0;
+    margin: 0;
+}
+
+.navTopo .col-md-5 span{
+    display: flex;
+    align-items: center;
+    padding-top: 1%;
+}
+
+.navTopo .col-md-6{
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    height: 100%;
+    padding: 0;
+    margin: 0;
+}
+
+.navTopo .col-md-6 span{
+    display: flex;
+    align-items: center;
+    padding-top: 1%;
+    padding-right: 5%;
+}
+
+.navTopo .contato{
+    font-size: 14px;
+    font-weight: 500;
+    color: #FFC12A;
+}
+
+.navTopo .endereco{
+    font-size: 12px;
+    font-weight: 500;
+    color: #C0C0C0;
+}
+
+.navTopo .col-md-1 ul, ul li, a{
+    text-decoration: none;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    align-items: center;
+}
+
+.navTopo .col-md-1 ul{
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    height: 100%;
+}
+
+.navTopo .col-md-1 ul li {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 3px;
+    padding: 2px 8px;
+    background: #323232;
+    border-radius: 50%;
+}
+
+.navTopo .col-md-1 ul li a i{
+    color: white;
+    font-size: 75%;
+}
+
+/* -----------------------------
+Fim do navTopo
+------------------------------- */
+
+/* ----------------------------------
+Início do navMenu
+--------------------------------- */
+
+.navMenu {
+    background: #353535;
+    text-align: center;
+}
+
+/* ---------------------------------
+Fim do navMenu
+------------------------------------- */
+
+/* --------------------------
+Fim do header
+-------------------------------- */
