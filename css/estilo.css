@@ -103,6 +103,7 @@ Início do navMenu
     background: #353535;
     text-align: center;
     padding: 15px;
+    z-index: 100;
 }
 
 .navMenu .col-md-2 img{
@@ -189,6 +190,7 @@ Início do navMenu
     background: #353535;
     padding: 0 !important;
     margin: 5px 0 0 0 !important;
+    z-index: 99;
 }
 
 .navMenu .sub-menu li{
@@ -272,16 +274,20 @@ Fim do header
 Início do carrosel
 ------------------------------- */
 
-.carousel {
+.carrossel {
+    z-index: 1;
+}
+
+.carrossel .carousel {
     margin: 0;
 }
 
-.carousel i {
+.carrossel .carousel i {
     font-size: 200%;
     color: #ffffff;
 }
 
-.carousel .textoCarrosel {
+.carrossel .carousel .textoCarrossel {
     text-align: left;
     top: 10%;
     transform: translateY(-50%);
@@ -290,17 +296,16 @@ Início do carrosel
     line-height: 1;
 }
 
-.carousel .textoCarrosel p {
+.carrossel .carousel .textoCarrossel p {
     margin-bottom: 0px;
     margin-top: 0px;
-    line-height: 65px;
 }
 
-.carousel .textoCarrosel .corTextoSlide {
+.carrossel .carousel .textoCarrossel .corTextoSlide {
     color: #FFC12A;
 }
 
-.carousel .btn {
+.carrossel .carousel .btn {
     text-align: center;
     color: white;
     border: 2px solid white;
@@ -310,17 +315,19 @@ Início do carrosel
     font-size: 20px !important;
     padding-top: 2%;
     margin-left: 5%;
+    width: 80%;
+    height: 15%;
 }
 
-.carousel .btn:hover {
+.carrossel .carousel .btn:hover {
     list-style: none;
 }
 
-.carousel .carousel-item img {
+.carrossel .carousel .carousel-item img {
     transition: transform 30s ease;
   }
   
-.carousel .carousel-item.active img {
+.carrossel .carousel .carousel-item.active img {
     transform: scale(2.0);
   }
 
@@ -341,13 +348,6 @@ Início do carrosel
     animation-delay: 0s;
     animation-fill-mode: both;
   }
-  
-  
-  
-  
-  
-  
-  
 
 /* -----------------------------
 Fim do Carrosel
@@ -380,3 +380,234 @@ Início do secaoDesde
 /* --------------------
 Fim do secaoDesde
 --------------------------------- */
+
+/* -------------------
+Início da secaoSobre
+--------------------------- */
+
+.secaoSobre {
+    padding: 50px 0;
+}
+
+.secaoSobre h2 {
+    font-size: 32px;
+    font-weight: 600;
+    color: #FFC12A;
+    padding-bottom: 15px;
+}
+
+.secaoSobre p {
+    font-size: 16px;
+    font-weight: 400;
+    color: #7A7A7A;
+    line-height: 1.5;
+}
+
+.secaoSobre img {
+    border-radius: 50px 0;
+}
+
+/* -----------------------
+Fim da secaoSobre
+----------------------------- */
+
+/* ------------------------
+Início da secaoInformacao
+---------------------------- */
+
+.secaoInformacao {
+    background: #333333;
+    padding: 50px;
+    display: flex;
+    align-items: center;
+}
+
+.secaoInformacao .col-md-4 {
+    text-align: center;
+    padding-top: 1%;
+}
+
+.secaoInformacao .container .col-md-4:nth-child(2) img {
+    width: 22%;
+}
+
+.secaoInformacao span {
+    font-size: 22px;
+    font-weight: 500;
+    color: #FFFFFF;
+}
+
+.secaoInformacao h2 {
+    font-size: 22px;
+    font-weight: 700;
+    color: #FFFFFF;
+}
+
+/* ------------------------
+Fim da secaoInformacao
+---------------------------- */
+
+/* ---------------------
+Início da secaoProduto
+---------------------- */
+
+.secaoProduto {
+    padding: 25px;
+}
+
+/* ----------------------
+Fim da secaoProduto
+------------------------- */
+
+/* ------------------
+Início da secaoContato
+--------------------- */
+
+.secaoContato {
+    background: #F6BB29;
+    padding: 50px;
+}
+
+.secaoContato h2 {
+    font-size: 32px;
+    font-weight: 600;
+    color: #FFFFFF;
+}
+
+.secaoContato p {
+    font-size: 16px;
+    font-weight: 500;
+    color: #000000;
+}
+
+.secaoContato h3 {
+    font-size: 24px;
+    font-weight: 600;
+    color: #FFFFFF;
+}
+
+.secaoContato span {
+    font-size: 16px;
+    font-weight: 500;
+    color: #000000;
+}
+
+.secaoContato i {
+    color: #202020;
+    padding-right: 10px;
+    font-size: 90%;
+}
+
+.secaoContato ul {
+    text-decoration: none;
+    list-style: none;
+    padding: 25px 0 0 0;
+    margin: 0;
+}
+
+.secaoContato ul li {
+    text-decoration: none;
+    list-style: none;
+    font-size: 18px;
+    font-weight: 500;
+    color: #202020 !important;
+    padding: 0;
+}
+
+.secaoContato .bordaForm input, select, button {
+    border-radius: 20px !important;
+}
+
+.secaoContato .col-md-6:nth-child(2) h2 {
+    font-size: 20px !important;
+    font-weight: 600;
+    color: #FFFFFF;
+    padding-bottom: 10px;
+}
+
+.secaoContato .mb-3:nth-child(6) input {
+    padding-bottom: 70px;
+}
+
+.secaoContato .btn {
+    background: #353535;
+    color: white;
+    width: 100%;
+}
+/* ----------------------
+Fim da secaoContato
+----------------------------- */
+
+/* -------------------------
+Início do footer
+-------------------------- */
+
+/* ------------------------
+Início do rodapeSuperior 
+----------------------------*/
+
+.rodapeSuperior {
+    background: #2F2F2F;
+    padding: 70px;
+}
+
+.rodapeSuperior .col:nth-child(1) {
+    display: flex;
+    align-items: center;
+}
+
+.rodapeSuperior img {
+    width: 70%;
+    display: flex;
+    align-items: center;
+}
+
+.rodapeSuperior h2 {
+    color: #FFFFFF;
+    font-size: 18px;
+    font-weight: 600;
+    padding-bottom: 10px;
+}
+
+.rodapeSuperior ul, ul li, ul li a{
+    text-decoration: none;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    color: #FFFFFF;
+    font-size: 13px;
+    font-weight: 300;
+    line-height: 1.8;
+}
+
+.rodapeSuperior .col li:hover {
+    color: #FFC12A !important;
+}
+
+/* --------------------------------
+Fim do rodapeSuperior 
+-------------------------------------*/
+
+/* ----------------------------
+Início do rodapeInferior
+----------------------------------- */
+
+.rodapeInferior {
+    background: #161616;
+    text-align: center;
+    padding: 6px;
+    border-bottom: 1px solid white;
+}
+
+.rodapeInferior span {
+    font-size: 12px;
+    color: #868686;
+}
+
+/* --------------------------------
+Fim do rodapeInferior
+--------------------------------------- */
+
+/* ------------------------
+Fim do footer
+----------------------------- */

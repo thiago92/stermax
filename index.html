@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="theme-color" content="#353535">
     <title>Stermax - Home</title>
     <link rel="icon" href="img/icon-logo.png">
     <!-- Bootstrap CSS -->
@@ -22,7 +23,7 @@
 <body>
   <header>
 
-    <nav class="navTopo">
+    <nav class="navTopo wow fadeInDown" data-wow-duration="0.8s" data-wow-delay="0.6s">
       <div class="container">
         <div class="row">
           <div class="col-md-5 contato">
@@ -95,7 +96,7 @@
     
   </header>
 
-  <section>
+  <section class="carrossel">
     <div id="carouselExampleCaptions" class="carousel slide wow fadeInLeftBig" data-wow-duration="0.8s" data-wow-delay="0.6s" data-bs-ride="carousel">
       <div class="carousel-indicators">
         <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
@@ -104,15 +105,15 @@
       <div class="carousel-inner">
         <div class="carousel-item active">
           <img src="img/sldie1.jpg" class="d-block w-100" alt="...">
-          <div class="carousel-caption textoCarrosel container row col-md-2 fadeInUpBig">
-            <p>Assistência técnica</p><p class="corTextoSlide">especializa Stermax</p>
+          <div class="carousel-caption textoCarrossel container row col-md-2 fadeInUpBig">
+            <p>Assistência técnica <span class="corTextoSlide">especializa Stermax</span></p>
             <span class="btn">Saiba Mais</span>
           </div>
         </div>
         <div class="carousel-item">
           <img src="img/sldie1.jpg" class="d-block w-100" alt="...">
-          <div class="carousel-caption textoCarrosel container row col-md-2 fadeInUpBig">
-            <p>Assistência técnica</p><p class="corTextoSlide">especializa Stermax</p>
+          <div class="carousel-caption textoCarrossel container row col-md-2 fadeInUpBig">
+            <p>Assistência técnica <span class="corTextoSlide">especializa Stermax</span></p>
             <span class="btn">Saiba Mais</span>
           </div>
         </div>
@@ -133,13 +134,180 @@
       <h3>Desde 1991 tem na qualidade de entrega, o seu maior ativo e reconhecimento.</h3>
     </div>
   </section>
-    
-      
-    
+
+  <section class="secaoSobre">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-6">
+          <h2>Sobre a Stermax</h2>
+          <p>
+            Com sede própria instalada na cidade de Pinhais, junto à região metropolitana de Curitiba – Paraná, a Stermax atua como fabricante de equipamentos para a área de biossegurança desde 1991, completando 30 anos de história.
+            <br><br>
+            A empresa conta com ampla experiência e know-how para o desenvolvimento e industrialização de produtos que atendem às necessidades do mercado para os segmentos: médico, odontológico, veterinário, laboratorial, beleza e estética, tatuagem e body piercing.
+            <br><br>
+            A Stermax é uma empresa socialmente responsável, que valoriza um relacionamento justo e correto com seus clientes, com seus recursos humanos internos, com o meio ambiente, com o cumprimento das leis e com a comunidade em geral.
+          </p>
+        </div>
+        <div class="col-md-6">
+          <img class="w-100" src="img/banner-institucional.jpg" alt="">
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="secaoInformacao">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-4">
+          <img src="img/ico-autoclave.png" alt=""><br>
+          <span>+ de 180 mil</span>
+          <h2>Autoclaves vendidas</h2>
+        </div>
+        <div class="col-md-4">
+          <img src="img/ico-assistencia.png" alt=""><br>
+          <span>Assistência técnica</span>
+          <h2>Especializada</h2>
+        </div>
+        <div class="col-md-4">
+          <img src="img/ico-mapa.png" alt=""><br>
+          <span>Produto 100%</span>
+          <h2>Produzido no Brasil</h2>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="secaoProduto">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-6">
+          <a href="#">
+            <img class="w-100" src="img/autoclave.jpg" alt="">
+          </a>
+        </div>
+        <div class="col-md-6">
+          <a href="#">
+            <img class="w-100" src="img/Revendedor-Stermax.png" alt="">
+          </a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="secaoContato">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-6">
+          <h2>Fale com a Stermax</h2>
+          <p>A Stermax é uma empresa socialmente responsável, que valoriza um relacionamento justo e correto com seus clientes, com seus recursos humanos internos, com o meio ambiente, com o cumprimento das leis e com a comunidade em geral.</p>
+          <h3>Atendimento</h3>
+          <span>Segunda a Sexta</span><br>
+          <span>8h às 12h | 13h00 às 17:30h</span>
+          <ul>
+            <li><i class="fa-solid fa-square-phone"></i>0800 721 8533 (Stermax)</li>
+            <li><i class="fa-solid fa-phone"></i>(41) 3668-2144 (Comercial)</li>
+            <li><i class="fa-regular fa-envelope"></i>stermax@stermax.com.br</li>
+          </ul>
+        </div>
+        <div class="col-md-6">
+          <h2>Mensagem:</h2>
+          <div class="mb-3">
+            <div class="bordaForm">
+              <input type="text" name="nome" class="form-control" id="nome" placeholder="Nome" minlength="10" required>
+            </div>
+          </div>
+          <div class="mb-3">
+            <div class="bordaForm">
+              <input type="email" name="email" class="form-control" id="email" placeholder="Seu e-mail" required>
+            </div>
+          </div>
+          <div class="mb-3">
+            <div class="bordaForm">
+              <select id="inputState" name="atendimento" class="form-select" required>
+                <option selected>Atendimento ao cliente</option>
+                <option>...</option>
+              </select>
+            </div>
+          </div>
+          <div class="mb-3">
+            <div class="bordaForm">
+              <input type="tel" name="tel" class="form-control" id="tel" placeholder="Telefone" required>
+            </div>            
+          </div>
+          <div class="mb-3">
+            <div class="bordaForm">
+              <input type="text" name="mensagem" class="form-control" id="mensagem" placeholder="Mensagem" required>
+            </div>
+          </div>
+          <div class="mb-3">
+            <div class="bordaForm">
+              <button id="enviarBtn" class="btn">Enviar</button>
+            </div>
+          </div>
+        </div>         
+      </div>
+    </div>
+  </section>
+
+  <foooter class="rodape">
+    <section class="rodapeSuperior">
+      <div class="container">
+        <div class="row">
+          <div class="col">
+            <img src="img/logo-stermax-branco.png" alt="">
+          </div>
+          <div class="col">
+            <h2>Autoclaves</h2>
+            <ul>
+              <a href=""><li>Lançamento Linha Flex</li></a>
+              <a href=""><li>Lançamento Linha Work</li></a>
+              <a href=""><li>Horizontais</li></a>
+              <a href=""><li>Verticais</li></a>
+              <a href=""><li>Personalizadas</li></a>
+            </ul>
+          </div>
+          <div class="col">
+            <h2>Acessórios</h2>
+            <ul>
+              <a href=""><li>Suporte para envelopes</li></a>
+            </ul>
+          </div>
+          <div class="col">
+            <h2>Periféricos</h2>
+            <ul>
+              <a href=""><li>Seladoras</li></a>
+              <a href=""><li>Incubadoras</li></a>
+            </ul>
+          </div>
+          <div class="col">
+            <h2>Assistência técnica</h2>
+            <ul>
+              <a href=""><li>Políticas de devolução, troca e garantia</li></a>
+              <a href=""><li>FAQ</li></a>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="rodapeInferior">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-12">
+            <span>
+              Nossos produtos são comercializados no Brasil e exterior, por uma ampla rede de revendas. Todos os direitos reservados à STERMAX 2023 – Copyright
+            </span>
+          </div>
+        </div>
+      </div>
+    </section>
+  </foooter>
+   
 </body>
+<!-- jQuery -->
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery.mask/1.14.0/jquery.mask.js"></script>
 <!-- meu script -->
 <script src="js/meu-script.js"></script>
-<!-- ScriptBootstrap -->
 <!-- <script src="js/bootstrap.min.js"></script> -->
 <script src="js/bootstrap.bundle.min.js"></script>
 <!-- Font Awesome -->
