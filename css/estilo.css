@@ -81,14 +81,14 @@ inínio do navTopo
     align-items: center;
     justify-content: center;
     margin: 0 3px;
-    padding: 2px 3px;
+    padding: 2px 8px;
     background: #323232;
     border-radius: 50%;
 }
 
 .navTopo .col-md-1 ul li a i{
     color: white;
-    font-size: 80%;
+    font-size: 100%;
 }
 
 /* -----------------------------
@@ -123,11 +123,11 @@ Início do navMenu
     margin: 0;
 }
 
-.navMenu .col-md-8 ul, ul li, ul li a {
+.navMenu .col-md-8 .nav-link {
     font-size: 15px;
-    font-weight: 600;
+    font-weight: 600 !important;
     color: white !important;
-    padding: 0 5px;
+    padding: 0 10px;
 }
 
 .navMenu .btn {
@@ -427,6 +427,18 @@ Início da secaoInformacao
     padding-top: 1%;
 }
 
+.secaoInformacao img {
+    padding-bottom: 20px !important;
+}
+
+.secaoInformacao img {
+    transition: transform 0.3s ease;
+    width: 45%;
+  }
+  
+.secaoInformacao img:hover {
+    transform: scale(1.1);
+  }
 .secaoInformacao .container .col-md-4:nth-child(2) img {
     width: 22%;
 }
@@ -534,6 +546,11 @@ Início da secaoContato
     color: white;
     width: 100%;
 }
+
+.secaoContato .erro-mensagem {
+    color: red;
+    padding-left: 15px;
+}
 /* ----------------------
 Fim da secaoContato
 ----------------------------- */
@@ -596,7 +613,6 @@ Início do rodapeInferior
     background: #161616;
     text-align: center;
     padding: 6px;
-    border-bottom: 1px solid white;
 }
 
 .rodapeInferior span {
