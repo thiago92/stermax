@@ -23,7 +23,7 @@
 <body>
   <header>
 
-    <nav class="navTopo wow fadeInDown" data-wow-duration="0.8s" data-wow-delay="0.6s">
+    <nav class="navTopo wow fadeInDown d-none d-xl-block d-xxl-none" data-wow-duration="0.8s" data-wow-delay="0.6s">
       <div class="container">
         <div class="row">
           <div class="col-md-5 contato">
@@ -43,13 +43,13 @@
       </div>
     </nav>
 
-    <nav class="navMenu wow fadeInDown" data-wow-duration="0.8s" data-wow-delay="0.6s">
+    <nav class="navMenu wow fadeInDown d-none d-xl-block d-xxl-none" data-wow-duration="0.8s" data-wow-delay="0.6s">
       <div class="container">
         <div class="row">
-          <div class="col-md-2">
+          <div class="col-md-2 col-4">
             <img class="zoomImg" src="img/logo-stermax-branco.png" alt="">
           </div>
-          <div class="col-md-8">
+          <div class="col-md-8 col-8">
             <div class="navbar navbar-expand-lg">
               <div class="container-fluid">
                 <div class="collapse navbar-collapse" id="navbarNavDropdown">
@@ -87,16 +87,63 @@
               </div>
             </div>
           </div>
-          <div class="col-md-2">
+          <div class="col-md-2 d-none d-xl-block d-xxl-none">
             <span class="btn">Fale Conosco</span>
           </div>
         </div>
       </div>
     </nav>
+
+    <div class="navResponsive d-block d-sm-none wow fadeInDown fixed-top" data-wow-duration="0.8s" data-wow-delay="0.6s">
+      <div class="">
+        <div class="">
+          <nav class="navbar navbar-expand-lg">
+            <div class="container-fluid">
+              <div class="navbar-brand">
+                <img src="img/logo-stermax-branco.png" alt="">
+              </div>
+              <button id="toggle-button" class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#menu" aria-controls="menu" aria-expanded="false" aria-label="Toggle navigation">
+                <i id="toggle-icon" class="fa-solid fa-bars"></i>
+              </button>
+              <div class="navbar-collapse collapse" id="menu">
+                <ul class="navbar-nav">
+                  <li class="nav-item">
+                    <a class="nav-link" href="#">Home</a>
+                  </li>
+                  <li class="nav-item">
+                    <div class="meu-dropdown">
+                      <button class="meu-dropdown-btn">Produtos<i class="fa-solid fa-play fa-rotate-90"></i></button>
+                      <div class="meu-dropdown-content">
+                        <div class="meu-dropdown">
+                          <button class="meu-dropdown-btn">Autoclaves<i class="fa-solid fa-play fa-rotate-90"></i></button>
+                          <div class="meu-dropdown-content">
+                            <a href="#">Lnaçamento Linha Flex</a>
+                            <a href="#">Lançamento Linha Work</a>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="#">Assistência</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="#">Contato</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="#">Download</a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </nav>
+        </div>
+      </div>
+    </div>
     
   </header>
 
-  <section class="carrossel">
+  <section class="carrossel d-none d-xl-block d-xxl-none">
     <div id="carouselExampleCaptions" class="carousel slide wow fadeInLeftBig" data-wow-duration="0.8s" data-wow-delay="0.6s" data-bs-ride="carousel">
       <div class="carousel-indicators">
         <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
@@ -122,6 +169,37 @@
         <i class="fa-solid fa-angle-left"></i>
       </button>
       <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
+        <i class="fa-solid fa-angle-right"></i>
+      </button>
+    </div>
+  </section>
+
+  <section class="carrosselResponsivo d-block d-sm-none">
+    <div id="carouselExampleCaptions1" class="carousel slide wow fadeInLeftBig" data-wow-duration="0.8s" data-wow-delay="0.6s" data-bs-ride="carousel">
+      <div class="carousel-indicators">
+        <button type="button" data-bs-target="#carouselExampleCaptions1" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+        <button type="button" data-bs-target="#carouselExampleCaptions1" data-bs-slide-to="1" aria-label="Slide 2"></button>
+      </div>
+      <div class="carousel-inner">
+        <div class="carousel-item active">
+          <img src="img/slide1.png" class="d-block" alt="...">
+          <div class="carousel-caption textoCarrossel container row col-md-2 fadeInUpBig">
+            <p>Assistência técnica <span class="corTextoSlide">especializa Stermax</span></p>
+            <span class="btn">Saiba Mais</span>
+          </div>
+        </div>
+        <div class="carousel-item">
+          <img src="img/slide1.png" class="d-block" alt="...">
+          <div class="carousel-caption textoCarrossel container row col-md-2 fadeInUpBig">
+            <p>Assistência técnica <span class="corTextoSlide">especializa Stermax</span></p>
+            <span class="btn">Saiba Mais</span>
+          </div>
+        </div>
+      </div>
+      <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions1" data-bs-slide="prev">
+        <i class="fa-solid fa-angle-left"></i>
+      </button>
+      <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions1" data-bs-slide="next">
         <i class="fa-solid fa-angle-right"></i>
       </button>
     </div>
@@ -250,7 +328,7 @@
   </section>
 
   <foooter class="rodape">
-    <section class="rodapeSuperior">
+    <section class="rodapeSuperior d-none d-xl-block d-xxl-none">
       <div class="container wow fadeIn" data-wow-duration="2s" data-wow-delay="0.6s">
         <div class="row">
           <div class="col">
@@ -280,6 +358,45 @@
             </ul>
           </div>
           <div class="col">
+            <h2>Assistência técnica</h2>
+            <ul>
+              <a href=""><li>Políticas de devolução, troca e garantia</li></a>
+              <a href=""><li>FAQ</li></a>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="rodapeSuperior d-block d-sm-none">
+      <div class="container wow fadeIn" data-wow-duration="2s" data-wow-delay="0.6s">
+        <div class="row">
+          <div class="col-12">
+            <img src="img/logo-stermax-branco.png" alt="">
+          </div>
+          <div class="col-12">
+            <h2>Autoclaves</h2>
+            <ul>
+              <a href=""><li>Lançamento Linha Flex</li></a>
+              <a href=""><li>Lançamento Linha Work</li></a>
+              <a href=""><li>Horizontais</li></a>
+              <a href=""><li>Verticais</li></a>
+              <a href=""><li>Personalizadas</li></a>
+            </ul>
+          </div>
+          <div class="col-12">
+            <h2>Acessórios</h2>
+            <ul>
+              <a href=""><li>Suporte para envelopes</li></a>
+            </ul>
+          </div>
+          <div class="col-12">
+            <h2>Periféricos</h2>
+            <ul>
+              <a href=""><li>Seladoras</li></a>
+              <a href=""><li>Incubadoras</li></a>
+            </ul>
+          </div>
+          <div class="col-12">
             <h2>Assistência técnica</h2>
             <ul>
               <a href=""><li>Políticas de devolução, troca e garantia</li></a>

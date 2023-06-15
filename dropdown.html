@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+.meu-dropdown {
+  position: relative;
+  display: inline-block;
+}
+
+.meu-dropdown-btn {
+  background-color: #f9f9f9;
+  color: #333;
+  padding: 8px 16px;
+  border: none;
+  cursor: pointer;
+}
+
+.meu-dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f9f9f9;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+}
+
+.meu-dropdown-content a {
+  color: #333;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+}
+
+.meu-dropdown .meu-dropdown-content {
+  left: 0%;
+  top: 100%;
+
+}
+
+.meu-dropdown:hover .meu-dropdown-content {
+  display: block;
+}
+
+
+    </style>
+</head>
+<body>
+    <div class="meu-dropdown">
+        <button class="meu-dropdown-btn">Nível 1</button>
+        <div class="meu-dropdown-content">
+          <a href="#">Item 1.1</a>
+          <a href="#">Item 1.2</a>
+          <div class="meu-dropdown">
+            <button class="meu-dropdown-btn">Nível 2</button>
+            <div class="meu-dropdown-content">
+              <a href="#">Item 2.1</a>
+              <a href="#">Item 2.2</a>
+              <div class="meu-dropdown">
+                <button class="meu-dropdown-btn">Nível 3</button>
+                <div class="meu-dropdown-content">
+                  <a href="#">Item 3.1</a>
+                  <a href="#">Item 3.2</a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      
+</body>
+<script>
+var dropdowns = document.getElementsByClassName("meu-dropdown-btn");
+
+for (var i = 0; i < dropdowns.length; i++) {
+  dropdowns[i].addEventListener("click", function() {
+    var dropdownContent = this.nextElementSibling;
+    if (dropdownContent.style.display === "block") {
+      dropdownContent.style.display = "none";
+    } else {
+      dropdownContent.style.display = "block";
+    }
+  });
+}
+
+// Adicione este código se você quiser que o dropdown seja fechado ao clicar fora dele
+window.onclick = function(event) {
+  if (!event.target.matches('.meu-dropdown-btn')) {
+    var dropdownContents = document.getElementsByClassName("meu-dropdown-content");
+    for (var i = 0; i < dropdownContents.length; i++) {
+      var openDropdown = dropdownContents[i];
+      if (openDropdown.style.display === 'block') {
+        openDropdown.style.display = 'none';
+      }
+    }
+  }
+}
+
+
+
+
+</script>
+</html>

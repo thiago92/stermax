@@ -101,3 +101,52 @@ $(document).ready(function() {
     return re.test(email);
   }
 });
+
+//Botão no navbar no modo responsivo
+document.getElementById('toggle-button').addEventListener('click', function() {
+  var icon = document.getElementById('toggle-icon');
+  var logo = document.getElementById('logo-img');
+
+  if (icon.classList.contains('fa-bars')) {
+    icon.classList.remove('fa-bars');
+    icon.classList.add('fa-times');
+  } else {
+    icon.classList.remove('fa-times');
+    icon.classList.add('fa-bars');
+  }
+});
+
+//Evento de clique para o dropdown no modo responsivo
+var dropdowns = document.getElementsByClassName("meu-dropdown-btn");
+
+for (var i = 0; i < dropdowns.length; i++) {
+  dropdowns[i].addEventListener("click", function() {
+    var dropdownContent = this.nextElementSibling;
+    if (dropdownContent.style.display === "block") {
+      dropdownContent.style.display = "none";
+    } else {
+      dropdownContent.style.display = "block";
+    }
+  });
+}
+
+// Adicione este código se você quiser que o dropdown seja fechado ao clicar fora dele
+window.onclick = function(event) {
+  if (!event.target.matches('.meu-dropdown-btn')) {
+    var dropdownContents = document.getElementsByClassName("meu-dropdown-content");
+    for (var i = 0; i < dropdownContents.length; i++) {
+      var openDropdown = dropdownContents[i];
+      if (openDropdown.style.display === 'block') {
+        openDropdown.style.display = 'none';
+      }
+    }
+  }
+}
+
+
+
+
+
+
+
+
