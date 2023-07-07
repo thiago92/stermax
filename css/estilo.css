@@ -352,6 +352,54 @@ Fim do rodapeInferior
 /* ------------------------
 Fim do footer
 ----------------------------- */
+.secaoAutoclave {
+    background-image: url(../img/sldie1.jpg);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    background-position: center bottom;
+    padding: 60px;
+}
+
+.secaoAutoclave h2 {
+    color: white;
+    font-size: 50px;
+    font-weight: 700;
+    text-align: center;
+}
+
+.secaoNav {
+    background: #FFC12A;
+    padding: 0px;
+}
+
+.secaoNav a {
+    text-decoration: none;
+    list-style: none;
+    color: #353535;
+    transition: color 0.3s;
+    font-size: 14px;
+    font-weight: 600;
+    letter-spacing: 0.5px;
+    text-transform: uppercase;
+}
+
+.secaoNav ul, .secaoNav ul li {
+    padding: 0;
+    margin: 0;
+}
+
+.secaoNav a:hover {
+    color: white;
+}
+
+.secaoNav .divisor {
+    color: white;
+    font-size: 20px;
+    font-weight: 100;
+    padding: 0;
+    margin: 0;
+}
 
 /* --------------------------
 Responsivo

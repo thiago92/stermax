@@ -1,0 +1,81 @@
+.pagina-produto {
+    padding: 50px 0;
+}
+
+.pagina-produto .caminho {
+    font-size: 16px;
+    font-weight: 500;
+    color: #333333;
+}
+
+.pagina-produto .caminho a {
+    text-decoration: none;
+    list-style: none;
+    color: #333333;
+}
+
+.pagina-produto .nome-produto h2{
+    color: #4D4D4D;
+    font-size: 44px;
+    font-weight: 700;
+    letter-spacing: -1px;
+}
+
+.pagina-produto .descricao p {
+    margin-top: 0;
+    margin-bottom: 0.9rem;
+    text-align: justify;
+    color: #6B6B6B;
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 1.5em;
+}
+
+.pagina-produto .descricao ul li {
+    text-decoration: none;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    text-align: justify;
+    color: #6B6B6B;
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 1.5em;
+}
+
+.pagina-produto .descricao ul {
+    text-decoration: none;
+    list-style: none;
+    margin-top: 0;
+    margin-bottom: 0.9rem;
+    text-align: justify;
+    color: #6B6B6B;
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 1.5em;
+}
+
+.pagina-produto .div-img {
+    border: 1px solid rgb(207, 207, 207);
+    padding: 10px;
+}
+
+.pagina-produto .div-img img {
+    width: 100%;
+    padding-top: 20px;
+}
+
+.pagina-produto .div-img h3 {
+    color: #4D4D4D;
+    font-size: 21px;
+    font-weight: 700;
+    letter-spacing: -1px;
+    text-align: center;
+    padding-top: 30px;
+}
+
+.pagina-produto .cores{
+    margin-left: 140px;
+    width: 40% !important;
+    margin-top: -20px;
+}
