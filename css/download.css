@@ -1,0 +1,54 @@
+.download {
+    margin: 40px 0;
+}
+
+.download h2 {
+    color: #1D1D1D;
+    font-size: 24px;
+    font-weight: 600;
+    letter-spacing: -1px;
+    margin-bottom: 30px;
+}
+
+.download .doc {
+    background-color: #3B3B3B;
+    text-align: center;
+    margin-bottom: 20px;
+    padding: 20px;
+    min-height: 150px;
+    border-radius: 10px;
+}
+
+.download .doc .nome-doc {
+    color: #FFFFFF;
+    font-size: 18px;
+    font-weight: 600;
+    text-transform: uppercase;
+    margin-bottom: 10px;
+}
+
+.download .doc button {
+    background-color: #FFC12A;
+    color: #303030;
+    font-size: 16px;
+    font-weight: 600;
+    transition: 0.3s ease;
+    padding: 8px;
+    border: none;
+    width: 50%;
+}
+
+.download .doc button:hover {
+    background-color: #1D1D1D;
+    color: #FFFFFF;
+}
+
+@media (max-width: 767.50px) {
+    .download .col-md-4 {
+        margin: 0;
+        padding: 0 10px;
+    }
+    .download .col-md-4 .doc {
+        min-height: 100px;
+    }
+}

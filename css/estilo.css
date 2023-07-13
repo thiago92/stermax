@@ -1,10 +1,10 @@
 @import "index.css";
 @import "assistencia.css";
 @import "contato.css";
-@import "downlaod.css";
 @import "produto.css";
 @import "produtos.css";
-@import "saiba-mais.css";
+@import "faq.css";
+@import "download.css";
 
 
 /*Body da página*/
@@ -370,7 +370,7 @@ Fim do footer
 
 .secaoNav {
     background: #FFC12A;
-    padding: 0px;
+    padding: 8px;
 }
 
 .secaoNav a {
@@ -382,23 +382,19 @@ Fim do footer
     font-weight: 600;
     letter-spacing: 0.5px;
     text-transform: uppercase;
+    padding: 0 5px;
 }
 
-.secaoNav ul, .secaoNav ul li {
+.secaoNav p {
     padding: 0;
     margin: 0;
+    color: white;
+    font-weight: 200;
+    text-align: center;
 }
 
 .secaoNav a:hover {
     color: white;
-}
-
-.secaoNav .divisor {
-    color: white;
-    font-size: 20px;
-    font-weight: 100;
-    padding: 0;
-    margin: 0;
 }
 
 /* --------------------------
@@ -512,12 +508,12 @@ Responsivo
     ------------------ */
 
     .rodapeSuperior {
-        padding-left: 15%;
+        padding: 30px 5px;
     }
 
     .rodapeSuperior img {
         padding-bottom: 20px;
-        width: 100%;
+        width: 60%;
     }
 
     .rodapeSuperior h2 {
@@ -529,7 +525,14 @@ Responsivo
         line-height: 18px;
     }
 
+    .secaoNav {
+        padding: 0;
+        margin: 0 0 0 -10px;
+    }
 
+    .secaoAutoclave {
+        margin-top: 20%;
+    }
 
     
 }

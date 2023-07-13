@@ -2,6 +2,10 @@
     padding: 50px 0;
 }
 
+.pagina-produto .descricao-completa {
+    padding-right: 40px;
+}
+
 .pagina-produto .caminho {
     font-size: 16px;
     font-weight: 500;
@@ -53,16 +57,47 @@
     font-size: 14px;
     font-weight: 500;
     line-height: 1.5em;
+    padding: 0;
 }
 
 .pagina-produto .div-img {
     border: 1px solid rgb(207, 207, 207);
-    padding: 10px;
+    padding: 20px;
 }
 
 .pagina-produto .div-img img {
     width: 100%;
     padding-top: 20px;
+    transition: 0.3s ease;
+    cursor: pointer;
+}
+.pagina-produto .div-img img:hover {
+    transform: scale(1.1);
+}
+
+.pagina-produto .col-md-12 .modal-header {
+    border: none;
+}
+
+.pagina-produto .col-md-12 .modal-header .btn-close {
+    position: absolute;
+    left: 1085px;
+    bottom: 670px;
+    width: 2em;
+    height: 2em;
+    color: black;
+    opacity: 1;
+}
+
+.pagina-produto .col-md-12 .modal-dialog .modal-body {
+    display: flex;
+    justify-content: center;
+    padding: 50px;
+}
+
+.pagina-produto .col-md-12 .modal-dialog .modal-body img {
+    width: 80%;
+    margin-top: -40px;
 }
 
 .pagina-produto .div-img h3 {
@@ -78,4 +113,78 @@
     margin-left: 140px;
     width: 40% !important;
     margin-top: -20px;
+}
+
+.pagina-produto .uso-produto {
+    background: #303030;
+    padding: 50px;
+    margin-bottom: -50px;
+}
+
+.pagina-produto .uso-produto h2 {
+    color: #FFFFFF;
+    font-size: 31px;
+    font-weight: 600;
+    letter-spacing: -1px;
+    text-align: center;
+    padding-bottom: 20px;
+}
+
+.pagina-produto .uso-produto p {
+    text-align: justify;
+    color: #FFFFFF;
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 1.5em;
+    text-align: justify;
+    padding-bottom: 20px;
+}
+
+.pagina-produto .uso-produto h3 {
+    color: #FFFFFF;
+    font-size: 25px;
+    font-weight: 600;
+    letter-spacing: -1px;
+    text-align: center;
+    padding-bottom: 20px;
+}
+
+.pagina-produto .uso-produto .col {
+    text-align: center;
+}
+
+.pagina-produto .uso-produto .col .area {
+    text-align: center;
+    color: #FFFFFF;
+    font-size: 18px;
+    font-weight: 500;
+}
+
+.pagina-produto .uso-produto .col img {
+    max-height: 40%;
+    transition: 0.3s ease;
+    padding-bottom: 10px;
+}
+
+.pagina-produto .uso-produto .col img:hover {
+    transform: scale(1.1);
+}
+
+@media (max-width: 767.50px) {
+
+    .pagina-produto .div-img {
+        margin-bottom: 10px;
+    }
+
+    .pagina-produto .container .descricao-completa {
+        padding-left: 30px;
+    }
+
+    .pagina-produto .col-md-5 {
+        padding: 0 20px !important;
+    }
+
+    .pagina-produto .uso-produto {
+        padding: 30px 0 0 0;
+    }
 }

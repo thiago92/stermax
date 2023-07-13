@@ -1,0 +1,425 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="theme-color" content="#353535">
+    <title>Stermax - Home</title>
+    <link rel="icon" href="img/icon-logo.png">
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css" >
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous">
+    <!-- fontFamily do Google -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    <!-- Estilo customizado -->
+    <link rel="stylesheet" type="text/css" href="css/estilo.css">
+    <!-- Animações -->
+    <link rel="stylesheet" type="text/css" href="css/animate.css">
+</head>
+<body>
+  <header>
+
+    <nav class="navTopo wow fadeInDown d-none d-md-block" data-wow-duration="0.8s" data-wow-delay="0.6s">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-5 contato">
+            <span>0800 721 8533 | stermax@stermax.com.br</span>
+          </div>
+          <div class="col-md-6 endereco">
+            <span>R. Emma Rohrsetzer, 1011 – Pinhais/PR (Curitiba) | CEP 83.324-190</span>
+          </div>
+          <div class="col-md-1">
+            <ul>
+              <li><a href=""><i class="fa-brands fa-facebook"></i></a></li>
+              <li><a href=""><i class="fa-brands fa-instagram"></i></a></li>
+              <li><a href=""><i class="fa-brands fa-youtube"></i></a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </nav>
+
+    <nav class="navMenu wow fadeInDown d-none d-md-block" data-wow-duration="0.8s" data-wow-delay="0.6s">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-2 col-4">
+            <img class="zoomImg" src="img/logo-stermax-branco.png" alt="">
+          </div>
+          <div class="col-md-8 col-8">
+            <div class="navbar navbar-expand-lg">
+              <div class="container-fluid">
+                <div class="collapse navbar-collapse" id="navbarNavDropdown">
+                  <ul class="navbar-nav menu">
+                    <li class="nav-item">
+                      <a class="nav-link" href="index.html">Home</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                      <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                        Produtos
+                      </a>
+                      <ul class="sub-menu clearfix p-5">
+                        <li><a href="#">Autoclaves<i class="fa-sharp fa-solid fa-play"></i></a>
+                          <ul class="sub-menu">
+                              <li><a href="produtos.html">Lançamento Linha Flex</a></li>
+                              <li><a href="produtos.html">Lançamento Linha Work</a></li>
+                          </ul>
+                        </li>
+                      </ul>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link" href="assistencia.html">Assistência</a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link" href="contato.html">Contato</a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link" href="faq.html">F.A.Q</a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link" href="download.html">Downloads</a>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-2 d-none d-md-block">
+            <span class="btn">Fale Conosco</span>
+          </div>
+        </div>
+      </div>
+    </nav>
+
+    <nav class="navResponsive d-md-none wow fadeInDown fixed-top" data-wow-duration="0.8s" data-wow-delay="0.6s">
+      <div class="">
+        <div class="">
+          <nav class="navbar navbar-expand-lg">
+            <div class="container-fluid">
+              <div class="navbar-brand">
+                <img src="img/logo-stermax-branco.png" alt="">
+              </div>
+              <button id="toggle-button" class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#menu" aria-controls="menu" aria-expanded="false" aria-label="Toggle navigation">
+                <i id="toggle-icon" class="fa-solid fa-bars"></i>
+              </button>
+              <div class="navbar-collapse collapse" id="menu">
+                <ul class="navbar-nav">
+                  <li class="nav-item">
+                    <a class="nav-link" href="index.html">Home</a>
+                  </li>
+                  <li class="nav-item">
+                    <div class="meu-dropdown">
+                      <button class="meu-dropdown-btn">Produtos<i class="fa-solid fa-play fa-rotate-90"></i></button>
+                      <div class="meu-dropdown-content">
+                        <div class="meu-dropdown">
+                          <button class="meu-dropdown-btn">Autoclaves<i class="fa-solid fa-play fa-rotate-90"></i></button>
+                          <div class="meu-dropdown-content">
+                            <a href="produtos.html">Lnaçamento Linha Flex</a>
+                            <a href="produtos.html">Lançamento Linha Work</a>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="assistencia.html">Assistência</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="contato.html">Contato</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="download.html">Download</a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </nav>
+        </div>
+      </div>
+    </nav>
+    
+  </header>
+
+  <section class="secaoAutoclave">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-12">
+          <h2>Downlaod</h2>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="download">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-12">
+                <h2>Faça o download dos nossos materiais:</h2>
+            </div>
+            <div class="col-md-4">
+                <div class="doc">
+                    <div class="nome-doc">
+                        <span>Catálogo técnico 2019</span>
+                    </div>
+                    <button><i class="fa-solid fa-download"></i>Downlaod</button>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="doc">
+                    <div class="nome-doc">
+                        <span>Manual autoclave eco analógico</span>
+                    </div>
+                    <button><i class="fa-solid fa-download"></i>Downlaod</button>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="doc">
+                    <div class="nome-doc">
+                        <span>Manual autoclave eco extra</span>
+                    </div>
+                    <button><i class="fa-solid fa-download"></i>Downlaod</button>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="doc">
+                    <div class="nome-doc">
+                        <span>Catálogo técnico 2019</span>
+                    </div>
+                    <button><i class="fa-solid fa-download"></i>Downlaod</button>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="doc">
+                    <div class="nome-doc">
+                        <span>Manual autoclave eco analógico</span>
+                    </div>
+                    <button><i class="fa-solid fa-download"></i>Downlaod</button>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="doc">
+                    <div class="nome-doc">
+                        <span>Manual autoclave eco extra</span>
+                    </div>
+                    <button><i class="fa-solid fa-download"></i>Downlaod</button>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="doc">
+                    <div class="nome-doc">
+                        <span>Catálogo técnico 2019</span>
+                    </div>
+                    <button><i class="fa-solid fa-download"></i>Downlaod</button>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="doc">
+                    <div class="nome-doc">
+                        <span>Manual autoclave eco analógico</span>
+                    </div>
+                    <button><i class="fa-solid fa-download"></i>Downlaod</button>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="doc">
+                    <div class="nome-doc">
+                        <span>Manual autoclave eco extra</span>
+                    </div>
+                    <button><i class="fa-solid fa-download"></i>Downlaod</button>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="doc">
+                    <div class="nome-doc">
+                        <span>Catálogo técnico 2019</span>
+                    </div>
+                    <button><i class="fa-solid fa-download"></i>Downlaod</button>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="doc">
+                    <div class="nome-doc">
+                        <span>Manual autoclave eco analógico</span>
+                    </div>
+                    <button><i class="fa-solid fa-download"></i>Downlaod</button>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="doc">
+                    <div class="nome-doc">
+                        <span>Manual autoclave eco extra</span>
+                    </div>
+                    <button><i class="fa-solid fa-download"></i>Downlaod</button>
+                </div>
+            </div>    
+        </div>
+    </div>
+  </section>
+
+  <section class="secaoContato">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-6 wow fadeInLeftBig" data-wow-duration="0.8s" data-wow-delay="0.6s">
+          <h2>Fale com a Stermax</h2>
+          <p>A Stermax é uma empresa socialmente responsável, que valoriza um relacionamento justo e correto com seus clientes, com seus recursos humanos internos, com o meio ambiente, com o cumprimento das leis e com a comunidade em geral.</p>
+          <h3>Atendimento</h3>
+          <span>Segunda a Sexta</span><br>
+          <span>8h às 12h | 13h00 às 17:30h</span>
+          <ul>
+            <li><i class="fa-solid fa-square-phone"></i>0800 721 8533 (Stermax)</li>
+            <li><i class="fa-solid fa-phone"></i>(41) 3668-2144 (Comercial)</li>
+            <li><i class="fa-regular fa-envelope"></i>stermax@stermax.com.br</li>
+          </ul>
+        </div>
+        <div class="col-md-6 wow fadeInRightBig" data-wow-duration="0.8s" data-wow-delay="0.6s">
+          <h2>Mensagem:</h2> 
+          <div class="mb-3">
+            <div class="bordaForm">
+              <input type="text" name="nome" class="form-control" id="nome" placeholder="Nome" minlength="10" required>
+            </div>
+          </div>
+          <div class="mb-3">
+            <div class="bordaForm">
+              <input type="email" name="email" class="form-control" id="email" placeholder="Seu e-mail" required>
+            </div>
+          </div>
+          <div class="mb-3">
+            <div class="bordaForm">
+              <select id="inputState" name="atendimento" class="form-select" required>
+                <option selected>Atendimento ao cliente</option>
+                <option>...</option>
+              </select>
+            </div>
+          </div>
+          <div class="mb-3">
+            <div class="bordaForm">
+              <input type="tel" name="tel" class="form-control" id="tel" placeholder="Telefone" required>
+            </div>            
+          </div>
+          <div class="mb-3">
+            <div class="bordaForm">
+              <input type="text" name="mensagem" class="form-control" id="mensagem" placeholder="Mensagem" required>
+            </div>
+          </div>
+          <div class="mb-3">
+            <div class="bordaForm">
+              <button id="enviarBtn" class="btn">Enviar</button>
+            </div>
+          </div>
+        </div>         
+      </div>
+    </div>
+  </section>
+
+  <foooter class="rodape">
+    <section class="rodapeSuperior d-none d-xl-block d-xxl-none">
+      <div class="container wow fadeIn" data-wow-duration="2s" data-wow-delay="0.6s">
+        <div class="row">
+          <div class="col">
+            <img src="img/logo-stermax-branco.png" alt="">
+          </div>
+          <div class="col">
+            <h2>Autoclaves</h2>
+            <ul>
+              <a href=""><li>Lançamento Linha Flex</li></a>
+              <a href=""><li>Lançamento Linha Work</li></a>
+              <a href=""><li>Horizontais</li></a>
+              <a href=""><li>Verticais</li></a>
+              <a href=""><li>Personalizadas</li></a>
+            </ul>
+          </div>
+          <div class="col">
+            <h2>Acessórios</h2>
+            <ul>
+              <a href=""><li>Suporte para envelopes</li></a>
+            </ul>
+          </div>
+          <div class="col">
+            <h2>Periféricos</h2>
+            <ul>
+              <a href=""><li>Seladoras</li></a>
+              <a href=""><li>Incubadoras</li></a>
+            </ul>
+          </div>
+          <div class="col">
+            <h2>Assistência técnica</h2>
+            <ul>
+              <a href=""><li>Políticas de devolução, troca e garantia</li></a>
+              <a href=""><li>FAQ</li></a>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="rodapeSuperior d-block d-sm-none">
+      <div class="container wow fadeIn" data-wow-duration="2s" data-wow-delay="0.6s">
+        <div class="row">
+          <div class="col-12">
+            <img src="img/logo-stermax-branco.png" alt="">
+          </div>
+          <div class="col-12">
+            <h2>Autoclaves</h2>
+            <ul>
+              <a href=""><li>Lançamento Linha Flex</li></a>
+              <a href=""><li>Lançamento Linha Work</li></a>
+              <a href=""><li>Horizontais</li></a>
+              <a href=""><li>Verticais</li></a>
+              <a href=""><li>Personalizadas</li></a>
+            </ul>
+          </div>
+          <div class="col-12">
+            <h2>Acessórios</h2>
+            <ul>
+              <a href=""><li>Suporte para envelopes</li></a>
+            </ul>
+          </div>
+          <div class="col-12">
+            <h2>Periféricos</h2>
+            <ul>
+              <a href=""><li>Seladoras</li></a>
+              <a href=""><li>Incubadoras</li></a>
+            </ul>
+          </div>
+          <div class="col-12">
+            <h2>Assistência técnica</h2>
+            <ul>
+              <a href=""><li>Políticas de devolução, troca e garantia</li></a>
+              <a href=""><li>FAQ</li></a>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="rodapeInferior">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-12">
+            <span>
+              Nossos produtos são comercializados no Brasil e exterior, por uma ampla rede de revendas. Todos os direitos reservados à STERMAX 2023 – Copyright
+            </span>
+          </div>
+        </div>
+      </div>
+    </section>
+  </foooter>
+   
+</body>
+<!-- jQuery -->
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery.mask/1.14.0/jquery.mask.js"></script>
+<!-- meu script -->
+<script src="js/meu-script.js"></script>
+<!-- <script src="js/bootstrap.min.js"></script> -->
+<script src="js/bootstrap.bundle.min.js"></script>
+<!-- Font Awesome -->
+<script src="https://kit.fontawesome.com/4fa080e3da.js" crossorigin="anonymous"></script>
+<!-- Animações com o WOW.JS -->
+<script src="js/wow.min.js"></script>
+<!-- Iniciar animações do WOW.JS -->
+<script>
+    new WOW().init();
+</script>
+</html>

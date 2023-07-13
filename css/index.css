@@ -410,6 +410,10 @@ Fim da secaoContato
     secaoContato
     ------------------ */
 
+    .secaoContato {
+        padding: 30px 5px;
+    }
+
     .secaoContato .col-md-6:nth-child(2) h2 {
         padding-top: 25px;
     }

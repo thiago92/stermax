@@ -1,0 +1,148 @@
+.assistencia {
+    padding: 40px 0;
+}
+
+.assistencia h2 {
+    color: #1D1D1D;
+    font-size: 24px;
+    font-weight: 600;
+    letter-spacing: -1px;
+}
+
+.assistencia p {
+    text-align: left;
+    color: #424242;
+    font-weight: 500;
+}
+
+.assistencia button {
+    background-color: #222222;
+    color: #ffffff;
+    border: none;
+    font-weight: 500;
+    border-radius: 30px;
+    width: 100%;
+    height: 100%;
+}
+
+.assistencia .nexus-jgp {
+    background: #FFC12A;
+    padding: 20px;
+    margin: 40px 0;
+    border-radius: 10px;
+}
+
+.assistencia .nexus-jgp h3 {
+    color: #FFFFFF;
+    font-size: 24px;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: -1px;
+    padding-bottom: 20px;
+}
+
+.assistencia .nexus-jgp ul {
+    padding: 0;
+    margin: 0;
+    text-decoration: none;
+    list-style: none;
+}
+
+.assistencia .nexus-jgp ul li {
+    padding: 0;
+    margin: 0;
+    text-decoration: none;
+    list-style: none;
+    text-align: left;
+    color: #FFFFFF;
+    font-size: 18px;
+    font-weight: 500;
+    line-height: 1.5em;
+}
+
+.assistencia .assistencia-2 {
+    background-image: url(../img/parts.jpg);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    padding: 60px 0;
+    margin-bottom: -40px;
+}
+
+.assistencia .assistencia-2 .pecas-manual {
+    background-color: rgba(54, 54, 54, 0.59);
+    text-align: center;
+    padding: 30px;
+    border-radius: 10px;
+}
+
+.assistencia .assistencia-2 .pecas-manual .img-peca {
+    width: 15%;
+    margin-bottom: 30px;
+}
+
+.assistencia .assistencia-2 .pecas-manual .img-manual {
+    width: 25%;
+    margin-bottom: 30px;
+}
+
+.assistencia .assistencia-2 .pecas-manual h4 {
+    color: #FFFFFF;
+    font-size: 24px;
+    font-weight: 600;
+    letter-spacing: -1px;
+    margin-bottom: 30px;
+}
+
+.assistencia .assistencia-2 .pecas-manual p {
+    text-align: center;
+    color: #FFFFFF;
+    font-size: 18px;
+    font-weight: 500;
+    line-height: 1.5em;
+    margin-bottom: 30px;
+}
+
+.assistencia .assistencia-2 .pecas-manual button {
+    background-color: #FFC12A;
+    color: #303030;
+    font-size: 16px;
+    font-weight: 600;
+    transition: 0.3s ease;
+    padding: 10px;
+    width: 30%;
+}
+
+.assistencia .assistencia-2 .pecas-manual button i {
+    padding-right: 5px;
+}
+
+.assistencia .assistencia-2 .pecas-manual button:hover {
+    background-color: #1D1D1D;
+    color: #FFFFFF;
+}
+
+@media (max-width: 767.50px) {
+    .assistencia .col-md-5 {
+        margin-bottom: 10px;
+    }
+    .assistencia .col-md-2 {
+        margin-bottom: 30px;
+    }
+    .assistencia .col-md-2 button {
+        padding: 10px;
+
+    }
+    .assistencia .nexus-jgp {
+        margin: 20px 0;
+    }
+    .assistencia .assistencia-2 {
+        margin-top: 30px;
+    }
+    .assistencia .assistencia-2 .col-md-6:nth-child(1) {
+        margin-bottom: 30px;
+    }
+    .assistencia .assistencia-2 .pecas-manual button {
+        width: 50%;
+    }
+}
