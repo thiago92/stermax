@@ -531,7 +531,12 @@ Responsivo
     }
 
     .secaoAutoclave {
-        margin-top: 20%;
+        margin-top: 90px;
+        padding: 20px 0;
+    }
+
+    .secaoAutoclave h2 {
+        font-size: 34px;
     }
 
     

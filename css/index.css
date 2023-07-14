@@ -34,17 +34,16 @@ Início do carrosel
 }
 
 .carrossel .carousel .btn {
-    text-align: center;
     color: white;
     border: 2px solid white;
     border-radius: 40px;
-    margin-top: 0px;
+    margin-top: -40px;
     text-align: center;
     font-size: 20px !important;
-    padding-top: 2%;
+    padding-top: 7px;
     margin-left: 5%;
-    width: 80%;
-    height: 15%;
+    width: 175px;
+    height: 50px;
 }
 
 .carrossel .carousel .btn:hover {
@@ -338,20 +337,18 @@ Fim da secaoContato
     }
 
     .carrosselResponsivo .carousel .btn {
-        display:inline-flex;
-        align-items: center;
         text-align: center;
         color: white;
         border: 2px solid white;
         border-radius: 40px;
-        margin-top: -25%;
+        margin-top: -110px;
         font-size: 15px !important;
-        padding-left: 40px;
-        margin-left: 5%;
-        width: 40%;
-        height: 10%;
+        margin-left: 10px;
+        width: 150px;
+        height: 50px;
         top: 100% !important;
         transform: translateY(-50%);
+        padding-top: 12px;
     }
 
     .carrosselResponsivo .carousel .btn:hover {
