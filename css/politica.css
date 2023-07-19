@@ -1,0 +1,18 @@
+.politica {
+    margin-bottom: 40px;
+}
+
+.politica h2 {
+    color: #1D1D1D;
+    font-size: 24px;
+    font-weight: 600;
+    letter-spacing: -1px;
+    padding-top: 40px;
+    padding-bottom: 20px;
+}
+
+.politica p {
+    text-align: left;
+    color: #424242;
+    font-weight: 500;
+}
